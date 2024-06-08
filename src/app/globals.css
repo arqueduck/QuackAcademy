@@ -20,6 +20,10 @@ header{
   gap: 1px;
 }
 
+h1, h2, h3 {
+  margin: 1em 0;
+}
+
 a.menu {
   width: 150px;
   padding: 10px;

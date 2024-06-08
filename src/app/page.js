@@ -2,15 +2,6 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <>
-      <header>
-          <a className="menu">Home</a>
-          <a className="menu">Comece AQUI!</a>
-          <a className="menu">HTML</a>
-          <a className="menu">CSS</a>
-          <a className="menu">JavaScript</a>
-      </header>
-
       <div className="p-4">
         <h1>Por que aprender sobre programação?</h1>
         <p>Nos dias de hoje, o contato com a tecnologia é algo cotidiano e as vezes nós usamos tantas tecnologias interessantes diariamente, que esquecemos de onde tudo partiu. Não pensamos com frequencia que para uma tecnologia existir, alguém em algum momento precisou a explorar, idealizar e criar.</p>
@@ -19,6 +10,5 @@ export default function Home() {
         <b><p>Quem sabe você não é o próximo Steve Jobs?</p></b>
         <p>Bora testar?</p>
       </div>
-    </>
   );
 }
