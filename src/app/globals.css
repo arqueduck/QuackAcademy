@@ -2,32 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+body{
+  background-color: #ffffff;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+header{
+  background-color: rgb(8, 131, 231);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1px;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+a.menu {
+  width: 150px;
+  padding: 10px;
+  border: 3px solid rgb(0, 0, 0);
+  margin: auto;
+  background-color: rgb(134, 248, 214);
+  border-radius: 20px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-align: center;
+  transition-duration: 0.2s;
+  flex-basis: 190px;
+  font-size: larger;
+}
+
+a.menu:hover{
+  background-color: rgb(65, 107, 94);
+  color: aliceblue;
+  transform: scale(1.09);
+  cursor: pointer;
 }
