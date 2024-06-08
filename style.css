@@ -1,0 +1,33 @@
+* {
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: rgb(231, 153, 8);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1px;
+}
+
+a.menu {
+    width: 150px;
+    padding: 10px;
+    border: 3px solid rgb(0, 0, 0);
+    margin: auto;
+    background-color: rgb(248, 208, 134);
+    border-radius: 45px 7px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    text-align: center;
+    transition-duration: 0.2s;
+    flex-basis: 150px;
+    font-size: larger;
+}
+
+a.menu:hover{
+    background-color: rgb(107, 96, 65);
+    color: aliceblue;
+    transform: scale(1.09);
+    cursor: pointer;
+}
