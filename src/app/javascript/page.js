@@ -1,3 +1,11 @@
+import CodeSnippet from "@/components/code/CodeSnippet";
+
+const code2 = `
+var teste = "Alooou"
+
+console.log(teste)
+`
+
 export default function page(){
     return (
         <div className="p-4">
@@ -7,6 +15,8 @@ export default function page(){
             <p>
                 O JavaScript é responsável por dar funcionalidade para a página.
             </p>
+            
+            <CodeSnippet content={code2} language="js" />
         </div>
     )
 }

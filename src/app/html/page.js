@@ -1,11 +1,5 @@
 import CodeSnippet from "@/components/code/CodeSnippet";
 
-const code2 = `
-var teste = "Alooou"
-
-console.log(teste)
-`
-
 const code = `
 <!DOCTYPE html>
 <html lang="en">
@@ -108,9 +102,6 @@ export default function page(){
             <p>Para isso, você pode acessar o W3 School, que é uma página voltada ao aprendizado de várias linguagens de programação de forma mais aprofundada.</p>
             <br></br>
             <p>Caso o HTML tenha feito sentido pra você e você quer se desafiar a criar páginas com mais elementos, é só <a className="font-bold text-teal-400" href="https://www.w3schools.com/html/default.asp">CLICAR AQUI</a></p>
-            
-
-            <CodeSnippet content={code2} language="js" />
         </div>
     )
 }
