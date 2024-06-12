@@ -1,11 +1,6 @@
 import CodeSnippet from "@/components/code/CodeSnippet";
 import Image from 'next/image'
 
-const imageStyle = {
-    borderRadius: '2%',
-    border: '1px solid #fff',
-  }
-
 const code = `
 <!DOCTYPE html>
 <html lang="en">
@@ -56,7 +51,7 @@ export default function page(){
                 width={500}
                 height={500}
                 alt="Criação da Pasta"
-                style={imageStyle}
+                className="rounded-3xl m-4"
             />
 
             <h2 className="text-xl text-center">
