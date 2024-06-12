@@ -14,7 +14,7 @@ export default function Header(){
             </Link>
             <Link href="/introducao"
             className="btn btn-primary text-neutral-content">
-                Começe <strong>aqui</strong>!
+                Comece <strong>aqui</strong>!
             </Link>
             <Link href="/html"
             className="btn btn-primary text-neutral-content">
