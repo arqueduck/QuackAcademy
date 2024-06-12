@@ -1,4 +1,10 @@
 import CodeSnippet from "@/components/code/CodeSnippet";
+import Image from 'next/image'
+
+const imageStyle = {
+    borderRadius: '2%',
+    border: '1px solid #fff',
+  }
 
 const code = `
 <!DOCTYPE html>
@@ -12,8 +18,6 @@ const code = `
     
 </body>
 </html>`
-
-
 
 export default function page(){
     return (
@@ -47,7 +51,13 @@ export default function page(){
                 Criando meu primeiro arquivo HTML
             </h2>
             <p>A criação de um arquivo HTML é muito mais fácil do que você imagina! Para começar crie uma nova pasta na sua área de trabalho, neste exemplo vou criar uma pasta de nome "Meu Site"</p>
-            <h1 className="text-5xl">NÃO CONSEGUI COLOCAR UMA IMAGEM HELP</h1>
+            <Image
+                src="/images/createFolder.png"
+                width={500}
+                height={500}
+                alt="Criação da Pasta"
+                style={imageStyle}
+            />
 
             <h2 className="text-xl text-center">
                 Estrutura básica do HTML
