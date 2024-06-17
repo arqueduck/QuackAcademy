@@ -1,6 +1,7 @@
 import Sidemenu from "@/components/Sidemenu";
 import CodeSnippet from "@/components/code/CodeSnippet";
 import Image from 'next/image'
+import Link from "next/link";
 
 const code = `
 <!DOCTYPE html>
@@ -14,6 +15,55 @@ const code = `
     
 </body>
 </html>`
+
+const code1 =`
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEu primeiro site</title>
+</head>
+<body>
+    <!-- O que é escrito dentro dos sinais de comentário, não aparecem na página HTML -->
+    <!-- Geralmente esta tag é usada para comentar e organizar melhor o código -->
+    <!-- Assim fica mais fácil para outras pessoas entenderem o que foi programado -->
+
+    <h1>Este é um título grandão</h1>
+    <h2>Este é um título menor</h2>
+    <h3>E o título diminui</h3>
+    <h6>Até H6</h6>
+
+    <p>Este é um parágrafo, usado para ter qualquer coisa escrita.</p>
+    <p>Vou adicionar várias linhas de caracteres para ver como fica</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis perspiciatis aut magnam delectus, quae voluptate, ut at nisi nostrum consequuntur aspernatur, natus porro commodi cum vitae dolore ullam necessitatibus iure voluptas quod eos dolores sint esse. Architecto consequuntur, eius labore, iusto, autem alias consequatur deserunt maxime totam dignissimos amet? Quibusdam sapiente impedit voluptatibus iusto rerum blanditiis maxime assumenda, ab quo repudiandae. Incidunt corporis, deserunt officiis adipisci sapiente libero in eius similique eaque distinctio? Ad cupiditate ex consequuntur sapiente quo delectus itaque neque magnam rerum at! Itaque ullam architecto unde aliquid modi, eius sint, voluptatibus optio accusamus doloremque maiores porro rem?</p>
+
+    <a href="https://google.com">Clique aqui e abra o Google</a>
+   
+    <br>
+    <p>Acima e abaixo deste parágrafo tem uma quebra de linha</p>
+    <br>
+
+    <div>
+        <p>Este texto está dentro de uma DIV</p>
+    </div>
+
+    <img src="https://apexensino.com.br/wp-content/uploads/2019/02/iStock-1017296544-1024x683-1024x640.jpg" alt="Homem programando">
+
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+</body>
+</html>
+`
 
 export default function page(){
     return (
@@ -218,13 +268,23 @@ export default function page(){
                 <li><strong>!-- COMENTÁRIOS --</strong>: Te permite adicionar comentários no código que não vão aparecer para os usuários e servem somente para a organização do código (Comentar o próprio código é uma boa prática muito bem vista na comunidade, pois torna a compreensão do seu código para outros desenvolvedores muito melhor).</li>
                 <li><strong>h1 a h6</strong>: Títulos de diferentes níveis de importância, sendo h1 o "maior" título e h6 o "menor" hierarquicamente.</li>
                 <li><strong>p</strong>: Parágrafo de texto. É aqui que vai todo o conteúdo em texto que vai aparecer na página para o usuário</li>
+                <li><strong>br</strong>: É uma quebra de linha, geralmente usado para separar um conteúdo do outro</li>
+                <li><strong>div</strong>: Este é um elemento que vamos usar principalmente para a estilização da página. Mas esta também cria uma "divisão" na página (na parte de CSS as DIVs vão fazer mais sentido, prometo). </li>
                 <li><strong>a href="URL"</strong>: É uma tag utilizada para te levar a outro lugar quando clicar em cima do texto destacado. Geralmente usado para levar a um link externo (como um vídeo no youtube explicando algo), ou até mesmo um link interno (Pode te levar a outra página HTML, por exemplo). </li>
                 <li><strong>img src="URL" alt="Descrição"</strong>: Essa é a tag que te permite adicionar imagens à sua página web. Funciona tanto com links externos (de outras páginas na internet), como com links internos (uma imagem salva em uma pasta do seu projeto)</li>
                 <li><strong>ol</strong>: Cria uma lista de itens ordenados, ou seja, o primeiro item é enumerado 1., o segundo 2., e assim por diante.</li>
                 <li><strong>ul</strong>: Cria uma lista de itens que ao contrário da anterior, não vai ser ordenada</li>
                 <li><strong>li</strong>: Cria um item dentro das listas de itens mencionadas acima</li>
-                <h1 className="text-5xl">COLOCAR EXEMPLO DE CÓDIGO PARA CADA ITEM</h1>
+                <br></br>
+                <p className="text-lg">Abaixo, um exemplo de página usando todas as tags que comentamos acima. Copiar o código vai funcionar, mas para aprender <strong>mesmo</strong>, o ideal é você mesmo escrever cada linha do código.</p>
 
+                <div className="flex m-4">
+                    <CodeSnippet content={code1}/>
+                </div>
+                <p>Como resultado do código escrito acima, temos a seguinte página HTML: <Link href="/links/exemploHtml" className="font-bold text-teal-400">Clique Aqui</Link></p>
+
+                <p className="text-5xl">FAZER FUNCIONAR A PARTE DE VER A PÁGINA CRIADA</p>
+                
                 <h2 className="text-xl text-center" id="title-4">
                     Atributos Comuns
                 </h2>
