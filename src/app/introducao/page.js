@@ -1,5 +1,3 @@
-
-
 export default function Introduction(){
     return (
         <div className="p-4 flex flex-col">

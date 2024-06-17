@@ -111,6 +111,60 @@ export default function page(){
                     alt="Criação da Pasta"
                     className="rounded-3xl m-4"
                 />
+                <p>
+                    Depois de ter a pasta criada, dê 2 cliques em cima dela, para entrar na pasta.
+                </p>
+                <p>
+                    Já dentro dela, basta clicar com o botão direito e depois ir até "Novo" e então "Documento de Texto", ou "Text Document", a depender do idioma do seu sistema operacional
+                </p>
+                <Image
+                    src="/images/createFile.png"
+                    width={500}
+                    height={500}
+                    alt="Criação do Arquivo"
+                    className="rounded-3xl m-4"
+                />
+                <p>
+                    Feito isso, nomeie seu arquivo como index (esta é uma nomenclatura padrão para as páginas principais em HTML). Se no seu computador o final do arquivo está como ".txt", basta renomear este arquivo para ".html" e assim, você terá a sua primeira página em HTML <strong>JÁ CRIADA!</strong> Ela está vazia, mas já existe.
+                </p>
+                <p>
+                    Se o ".txt" não aparece ao final do seu arquivo index, não precisa se preocupar pois no próximo passo você consegue trocar este final. Ah! <strong>Muito importante</strong>, a partir de agora vamos chamar o final do arquivo por seu nome correto, que é "<strong>extensão</strong>".
+                </p>
+                <br></br>
+                <p>
+                    Agora, você pode clicar com o botão direito em cima do seu arquivo index, ir até a opção "Abrir com" e selecionar a opção "Visual Studio Code"
+                </p>
+                <Image
+                    src="/images/openVSCode.png"
+                    width={500}
+                    height={500}
+                    alt="Abrir Visual Studio Code"
+                    className="rounded-3xl m-4"
+                />
+
+                <p>
+                    Feito isso, algo muito semelhante ao que está abaixo será aberto no seu computador. Basta clicar na primeira opção de "Open Folder", que significa "Abrir pasta". Ah! <strong>Mais uma informação importante.</strong> Em lingagem de programação é usado muito inglês, caso você não tenha conhecimento, não tem problema nenhum! Mesmo assim você consegue criar a sua primeira página, mas fica um incentivo para você aprender também o inglês para seguir no mundo de programação.
+                </p>
+                <Image
+                    src="/images/openFolder.png"
+                    width={500}
+                    height={500}
+                    alt="Abrir Arquivo"
+                    className="rounded-3xl m-4"
+                />
+                <p>
+                    Com a pasta aberta no Visual Studio Code, caso você não tenha trocado a extensão do arquivo para ".html" ainda, este é o momento ideal para fazer isso. Para tal, basta clicar com o botão direito em cima do seu arquivo index e depois em "Rename" ou em português "Renomear"
+                </p>
+                <Image
+                    src="/images/rename.png"
+                    width={500}
+                    height={500}
+                    alt="Renomear"
+                    className="rounded-3xl m-4"
+                />
+                <p>
+                    Basta apagar ".txt" da extensão deste arquivo e escrever ".html". E pronto, você criou sua primeira página de marcação de texto que é o início do seu site.
+                </p>
 
                 <h2 className="text-xl text-center" id="title-2">
                     Estrutura básica do HTML
@@ -130,7 +184,31 @@ export default function page(){
                 <div className="flex m-4">
                     <CodeSnippet content={code}/>
                 </div>
-
+                <p>
+                    <strong>É agora que entra a parte das facilidades que uma IDE pode fornecer para seus usuários.</strong>
+                </p>
+                <p>
+                    No Visual Studio Code, quando você está criando uma nova página de internet, você não precisa digitar toda essa estrutura apresentada acima, ao invés disso, vamos usar um atalho que o IDE nos proporciona!
+                </p>
+                <p>
+                    Para isso basta digitar apenas "!" na parte da direita, que é onde deve estar aberto o seu arquivo index.html, e depois apertar a tecla "Enter" no teclado. Com isso toda essa estrutura inicial será automaticamente criada, como no exemplo abaixo.
+                </p>
+                <div className="flex flex-row">
+                <Image
+                    src="/images/write!.png"
+                    width={500}
+                    height={500}
+                    alt="Escrever !"
+                    className="rounded-3xl m-4 flex"
+                />
+                <Image
+                    src="/images/html.png"
+                    width={500}
+                    height={500}
+                    alt="HTML"
+                    className="rounded-3xl m-4 flex"
+                />
+                </div>
                 <h2 className="text-xl text-center" id="title-3">
                     Elementos e Tags Principais
                 </h2>
