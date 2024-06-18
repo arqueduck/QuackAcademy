@@ -1,6 +1,6 @@
 export default function Introduction(){
     return (
-        <div className="p-4 flex flex-col">
+        <div className="p-4 flex flex-col overflow-y-auto">
             <p className="
             mt-4
             text-2xl text-center font-bold
