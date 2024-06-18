@@ -100,31 +100,49 @@ export default function page(){
                     <a
                     className="whitespace-nowrap overflow-hidden text-ellipsis"
                     href="#title-1">
-                        Criando meu primeiro HTML
+                        O que é JavaScript?
                     </a>
                 </li>
                 <li>
                     <a className=""
                     href="#title-2">
-                        Estrutura básica do HTML
+                        Onde escrever o código JavaScript?
                     </a>
                 </li>
                 <li>
                     <a className=""
                     href="#title-3">
-                        Elementos e Tags Principais
+                        Variáveis
                     </a>
                 </li>
                 <li>
                     <a className=""
                     href="#title-4">
-                        Atributos Comuns
+                        Estruturas condicionais
                     </a>
                 </li>
                 <li>
                     <a className=""
                     href="#title-5">
-                        Formulários
+                        Funções
+                    </a>
+                </li>
+                <li>
+                    <a className=""
+                    href="#title-6">
+                        Laços de Repetição
+                    </a>
+                </li>
+                <li>
+                    <a className=""
+                    href="#title-7">
+                        Manipulação do DOM
+                    </a>
+                </li>
+                <li>
+                    <a className=""
+                    href="#title-8">
+                        Conclusão
                     </a>
                 </li>
             </Sidemenu>
@@ -151,7 +169,7 @@ export default function page(){
                 </section>
 
                 <section className="mb-6">
-                    <h2 className="text-2xl font-semibold mt-6 mb-2" id="title-1">Onde escrever o código JavaScript?</h2>
+                    <h2 className="text-2xl font-semibold mt-6 mb-2" id="title-2">Onde escrever o código JavaScript?</h2>
 
                     <p>
                         Existem duas formas de escrever o código que você irá utilizar na sua página HTML:
@@ -212,7 +230,7 @@ export default function page(){
                 </section>
 
                 <section className="mb-6">
-                    <h2 className="text-2xl font-semibold mt-6 mb-2">Variáveis</h2>
+                    <h2 className="text-2xl font-semibold mt-6 mb-2" id="title-3">Variáveis</h2>
                     <p className="mb-4">
                         Variáveis são usadas para armazenar informações que podem ser referenciadas e manipuladas no código.
                         Em JavaScript, podemos declarar variáveis usando <code>var</code>, <code>let</code>, ou <code>const</code>.
@@ -226,7 +244,7 @@ export default function page(){
 
 
                 <section className="mb-6">
-                    <h2 className="text-2xl font-semibold mt-6 mb-2">Estruturas Condicionais</h2>
+                    <h2 className="text-2xl font-semibold mt-6 mb-2" id="title-4">Estruturas Condicionais</h2>
                     <p className="mb-4">
                         Estruturas condicionais são usadas para tomar decisões no código, permitindo a execução de blocos de código diferentes com base em certas condições.
                         A mais comum é a instrução <code>if</code>, que verifica se uma condição é verdadeira e executa um bloco de código, senão, executa outro bloco.
@@ -241,7 +259,7 @@ export default function page(){
 
                 <section className="mb-6">
                 <section className="mb-6">
-                    <h2 className="text-2xl font-semibold mt-6 mb-2">Funções</h2>
+                    <h2 className="text-2xl font-semibold mt-6 mb-2" id="title-5">Funções</h2>
                     <p className="mb-4">
                         Funções são blocos de código que realizam uma tarefa específica e podem ser reutilizados ao longo do programa.
                         Elas podem receber parâmetros (informações de entrada) e retornar um valor de saída.
@@ -253,7 +271,7 @@ export default function page(){
                         Por fim, exibimos o resultado no console.
                     </p>
                 </section>
-                    <h2 className="text-2xl font-semibold mt-6 mb-2">Laços de Repetição</h2>
+                    <h2 className="text-2xl font-semibold mt-6 mb-2" id="title-6">Laços de Repetição</h2>
                     <p className="mb-4">
                         Laços de repetição permitem executar um bloco de código várias vezes. O laço mais comum é o <code>for</code>.
                     </p>
@@ -265,7 +283,7 @@ export default function page(){
                 </section>
 
                 <section className="mb-6">
-                    <h2 className="text-2xl font-semibold mt-6 mb-2">Manipulação do DOM</h2>
+                    <h2 className="text-2xl font-semibold mt-6 mb-2" id="title-7">Manipulação do DOM</h2>
                     <p className="mb-4">
                         O DOM (Document Object Model) é uma interface que representa o documento HTML em uma estrutura de árvore, 
                         permitindo que JavaScript acesse e manipule o conteúdo e a estrutura da página.
@@ -277,7 +295,7 @@ export default function page(){
                     </p>
                 </section>
                 <section className="mb-6">
-                    <h2 className="text-2xl font-semibold mt-6 mb-2">Conclusão</h2>
+                    <h2 className="text-2xl font-semibold mt-6 mb-2" id="title-8">Conclusão</h2>
                     <p className="mb-4">
                         Esses são os principais temas iniciais que precisamos aprender para começar a implementar funcionalidade nas nossas páginas web.
                     </p>
