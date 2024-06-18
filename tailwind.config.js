@@ -18,6 +18,32 @@ module.exports = {
     require('daisyui')
   ],
   daisyui: {
-    themes: ["corporate"]
+    // themes: ["corporate"]
+    themes: [
+      {
+        site: {          
+          "primary": "#f97316",
+          "primary-content": "#f3f4f6",
+          "secondary": "#2563eb",
+          "secondary-content": "#d3e6d1",
+          "accent": "#4ade80",
+          "accent-content": "#001400",
+          "neutral": "#374151",
+          "neutral-content": "#c8c5cb",
+          "base-100": "#f3f4f6",
+          "base-200": "#e5e7eb",
+          "base-300": "#d1d5db",
+          "base-content": "#141616",
+          "info": "#38bdf8",
+          "info-content": "#00080f",
+          "success": "#22c55e",
+          "success-content": "#000a02",
+          "warning": "#fde047",
+          "warning-content": "#160500",
+          "error": "#ff1f48",
+          "error-content": "#160002",
+        },
+      },
+    ]
   }
 };

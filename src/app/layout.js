@@ -21,6 +21,7 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <div className="
         flex flex-col
+        bg-base-100
         h-screen overflow-hidden
         ">
           <Header/>
