@@ -24,6 +24,10 @@ h1, h2, h3 {
   margin: 1em 0;
 }
 
+p {
+  text-align: justify;
+}
+
 a.menu {
   width: 150px;
   padding: 10px;
