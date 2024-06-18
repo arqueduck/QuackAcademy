@@ -1,6 +1,7 @@
 import Sidemenu from "@/components/Sidemenu";
 import CodeSnippet from "@/components/code/CodeSnippet";
 import Image from 'next/image'
+import Link from "next/link";
 
 const code = `
 <!DOCTYPE html>
@@ -14,6 +15,116 @@ const code = `
     
 </body>
 </html>`
+
+const code1 =`
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEu primeiro site</title>
+</head>
+<body>
+    <!-- O que é escrito dentro dos sinais de comentário, não aparecem na página HTML -->
+    <!-- Geralmente esta tag é usada para comentar e organizar melhor o código -->
+    <!-- Assim fica mais fácil para outras pessoas entenderem o que foi programado -->
+
+    <h1>Este é um título grandão</h1>
+    <h2>Este é um título menor</h2>
+    <h3>E o título diminui</h3>
+    <h6>Até H6</h6>
+
+    <p>Este é um parágrafo, usado para ter qualquer coisa escrita.</p>
+    <p>Vou adicionar várias linhas de caracteres para ver como fica</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis perspiciatis aut magnam delectus, quae voluptate, ut at nisi nostrum consequuntur aspernatur, natus porro commodi cum vitae dolore ullam necessitatibus iure voluptas quod eos dolores sint esse. Architecto consequuntur, eius labore, iusto, autem alias consequatur deserunt maxime totam dignissimos amet? Quibusdam sapiente impedit voluptatibus iusto rerum blanditiis maxime assumenda, ab quo repudiandae. Incidunt corporis, deserunt officiis adipisci sapiente libero in eius similique eaque distinctio? Ad cupiditate ex consequuntur sapiente quo delectus itaque neque magnam rerum at! Itaque ullam architecto unde aliquid modi, eius sint, voluptatibus optio accusamus doloremque maiores porro rem?</p>
+
+    <a href="https://google.com">Clique aqui e abra o Google</a>
+   
+    <br>
+    <p>Acima e abaixo deste parágrafo tem uma quebra de linha</p>
+    <br>
+
+    <div>
+        <p>Este texto está dentro de uma DIV</p>
+    </div>
+
+    <img src="https://apexensino.com.br/wp-content/uploads/2019/02/iStock-1017296544-1024x683-1024x640.jpg" alt="Homem programando">
+
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+</body>
+</html>
+`
+
+const code2=`
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu site</title>
+    <style>
+        .vermelho{
+            color: brown;
+        }
+
+        .verde{
+            color:rgb(18, 133, 18)
+        }
+    </style>
+</head>
+<body>
+    <p>Escreva seu nome: <input id="camponome"></input></p>
+
+    <div class="vermelho">
+        <p>Tudo escrito nessa seção</p>
+        <p>Está na cor Azul</p>
+    </div>
+
+    <div class="verde">
+        <p>Já nesta seção, tudo escrito</p>
+        <p>Está na cor Verde</p>
+    </div>
+</body>
+</html>
+`
+
+const code3=`
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="nome">Digite seu nome: <input type="text" name="nome"></label>
+        <br>
+        <br>
+        <label for="sexo">Qual o seu sexo: </label>
+        <input type="radio" name="sexo">Masculino
+        <input type="radio" name="sexo">Feminino
+        <br>
+        <br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Redefinir">
+        <br>
+        <br>
+        <button>Clique no botão</button>
+    </form>
+</body>
+</html>
+`
 
 export default function page(){
     return (
@@ -111,6 +222,60 @@ export default function page(){
                     alt="Criação da Pasta"
                     className="rounded-3xl m-4"
                 />
+                <p>
+                    Depois de ter a pasta criada, dê 2 cliques em cima dela, para entrar na pasta.
+                </p>
+                <p>
+                    Já dentro dela, basta clicar com o botão direito e depois ir até "Novo" e então "Documento de Texto", ou "Text Document", a depender do idioma do seu sistema operacional
+                </p>
+                <Image
+                    src="/images/createFile.png"
+                    width={500}
+                    height={500}
+                    alt="Criação do Arquivo"
+                    className="rounded-3xl m-4"
+                />
+                <p>
+                    Feito isso, nomeie seu arquivo como index (esta é uma nomenclatura padrão para as páginas principais em HTML). Se no seu computador o final do arquivo está como ".txt", basta renomear este arquivo para ".html" e assim, você terá a sua primeira página em HTML <strong>JÁ CRIADA!</strong> Ela está vazia, mas já existe.
+                </p>
+                <p>
+                    Se o ".txt" não aparece ao final do seu arquivo index, não precisa se preocupar pois no próximo passo você consegue trocar este final. Ah! <strong>Muito importante</strong>, a partir de agora vamos chamar o final do arquivo por seu nome correto, que é "<strong>extensão</strong>".
+                </p>
+                <br></br>
+                <p>
+                    Agora, você pode clicar com o botão direito em cima do seu arquivo index, ir até a opção "Abrir com" e selecionar a opção "Visual Studio Code"
+                </p>
+                <Image
+                    src="/images/openVSCode.png"
+                    width={500}
+                    height={500}
+                    alt="Abrir Visual Studio Code"
+                    className="rounded-3xl m-4"
+                />
+
+                <p>
+                    Feito isso, algo muito semelhante ao que está abaixo será aberto no seu computador. Basta clicar na primeira opção de "Open Folder", que significa "Abrir pasta". Ah! <strong>Mais uma informação importante.</strong> Em lingagem de programação é usado muito inglês, caso você não tenha conhecimento, não tem problema nenhum! Mesmo assim você consegue criar a sua primeira página, mas fica um incentivo para você aprender também o inglês para seguir no mundo de programação.
+                </p>
+                <Image
+                    src="/images/openFolder.png"
+                    width={500}
+                    height={500}
+                    alt="Abrir Arquivo"
+                    className="rounded-3xl m-4"
+                />
+                <p>
+                    Com a pasta aberta no Visual Studio Code, caso você não tenha trocado a extensão do arquivo para ".html" ainda, este é o momento ideal para fazer isso. Para tal, basta clicar com o botão direito em cima do seu arquivo index e depois em "Rename" ou em português "Renomear"
+                </p>
+                <Image
+                    src="/images/rename.png"
+                    width={500}
+                    height={500}
+                    alt="Renomear"
+                    className="rounded-3xl m-4"
+                />
+                <p>
+                    Basta apagar ".txt" da extensão deste arquivo e escrever ".html". E pronto, você criou sua primeira página de marcação de texto que é o início do seu site.
+                </p>
 
                 <h2 className="text-xl text-center" id="title-2">
                     Estrutura básica do HTML
@@ -130,7 +295,31 @@ export default function page(){
                 <div className="flex m-4">
                     <CodeSnippet content={code}/>
                 </div>
-
+                <p>
+                    <strong>É agora que entra a parte das facilidades que uma IDE pode fornecer para seus usuários.</strong>
+                </p>
+                <p>
+                    No Visual Studio Code, quando você está criando uma nova página de internet, você não precisa digitar toda essa estrutura apresentada acima, ao invés disso, vamos usar um atalho que o IDE nos proporciona!
+                </p>
+                <p>
+                    Para isso basta digitar apenas "!" na parte da direita, que é onde deve estar aberto o seu arquivo index.html, e depois apertar a tecla "Enter" no teclado. Com isso toda essa estrutura inicial será automaticamente criada, como no exemplo abaixo.
+                </p>
+                <div className="flex flex-row">
+                <Image
+                    src="/images/write!.png"
+                    width={500}
+                    height={500}
+                    alt="Escrever !"
+                    className="rounded-3xl m-4 flex"
+                />
+                <Image
+                    src="/images/html.png"
+                    width={500}
+                    height={500}
+                    alt="HTML"
+                    className="rounded-3xl m-4 flex"
+                />
+                </div>
                 <h2 className="text-xl text-center" id="title-3">
                     Elementos e Tags Principais
                 </h2>
@@ -140,13 +329,23 @@ export default function page(){
                 <li><strong>!-- COMENTÁRIOS --</strong>: Te permite adicionar comentários no código que não vão aparecer para os usuários e servem somente para a organização do código (Comentar o próprio código é uma boa prática muito bem vista na comunidade, pois torna a compreensão do seu código para outros desenvolvedores muito melhor).</li>
                 <li><strong>h1 a h6</strong>: Títulos de diferentes níveis de importância, sendo h1 o "maior" título e h6 o "menor" hierarquicamente.</li>
                 <li><strong>p</strong>: Parágrafo de texto. É aqui que vai todo o conteúdo em texto que vai aparecer na página para o usuário</li>
+                <li><strong>br</strong>: É uma quebra de linha, geralmente usado para separar um conteúdo do outro</li>
+                <li><strong>div</strong>: Este é um elemento que vamos usar principalmente para a estilização da página. Mas esta também cria uma "divisão" na página (na parte de CSS as DIVs vão fazer mais sentido, prometo). </li>
                 <li><strong>a href="URL"</strong>: É uma tag utilizada para te levar a outro lugar quando clicar em cima do texto destacado. Geralmente usado para levar a um link externo (como um vídeo no youtube explicando algo), ou até mesmo um link interno (Pode te levar a outra página HTML, por exemplo). </li>
                 <li><strong>img src="URL" alt="Descrição"</strong>: Essa é a tag que te permite adicionar imagens à sua página web. Funciona tanto com links externos (de outras páginas na internet), como com links internos (uma imagem salva em uma pasta do seu projeto)</li>
                 <li><strong>ol</strong>: Cria uma lista de itens ordenados, ou seja, o primeiro item é enumerado 1., o segundo 2., e assim por diante.</li>
                 <li><strong>ul</strong>: Cria uma lista de itens que ao contrário da anterior, não vai ser ordenada</li>
                 <li><strong>li</strong>: Cria um item dentro das listas de itens mencionadas acima</li>
-                <h1 className="text-5xl">COLOCAR EXEMPLO DE CÓDIGO PARA CADA ITEM</h1>
+                <br></br>
+                <p className="text-lg">Abaixo, um exemplo de página usando todas as tags que comentamos acima. Copiar o código vai funcionar, mas para aprender <strong>mesmo</strong>, o ideal é você mesmo escrever cada linha do código.</p>
 
+                <div className="flex m-4">
+                    <CodeSnippet content={code1}/>
+                </div>
+                <p>Como resultado do código escrito acima, temos a seguinte página HTML: <Link href="/exemplos/exemplo1" className="font-bold text-teal-400">Clique Aqui</Link></p>
+
+                <p className="text-5xl">NÃO FUNCIONOU DO JEITO QUE EU ESPERAVA, HELP</p>
+                
                 <h2 className="text-xl text-center" id="title-4">
                     Atributos Comuns
                 </h2>
@@ -154,10 +353,17 @@ export default function page(){
                     Os atributos são usados para várias facilidades, uma delas é a aplicação de estilos em um grupo de tags. Os estilos serão o próximo tema que iremos estudar com a parte de <strong>CSS</strong>
                 </p>
 
-                <li><strong>id</strong>: Identificador único para elementos, faz com que um elemento seja único dentro do código, o ID não pode se repetir dentro de um HTML</li>
-                <li><strong>class</strong>: Classe para estilização e seleção de múltiplos elementos, essa é a parte de CSS que comentamos no começo desta seção.</li>
+                <li><strong>id</strong>: Identificador único para elementos, faz com que um elemento seja único dentro do código, o ID não pode se repetir dentro de um HTML. Esta tag é usada para campos específicos, como um campo onde vamos coletar algum dado do usuário. Assim temos certeza de que o dado será preenchido especificamente no campo com o id X</li>
+                <li><strong>class</strong>: Classe para estilização e seleção de múltiplos elementos, essa é a parte de CSS que comentamos no começo desta seção. Vou dar um gostinho de como usar, mas a explicação mesmo vai estar aninhada na seção de CSS</li>
+                <br></br>
+                <p className="text-lg">Abaixo, um exemplo de página usando todas as tags que comentamos acima. Houve a adição da tag <strong>style</strong> no <strong>head</strong> da nossa página, isto é uma forma de declarar o CSS.</p>
 
-                <h1 className="text-5xl">COLOCAR EXEMPLO DE CÓDIGO PARA CADA ITEM</h1>
+                <div className="flex m-4">
+                    <CodeSnippet content={code2}/>
+                </div>
+                <p>Como resultado do código escrito acima, temos a seguinte página HTML: <Link href="/exemplos/exemplo1" className="font-bold text-teal-400">Clique Aqui</Link></p>
+                <p className="text-5xl">NÃO FUNCIONOU DO JEITO QUE EU ESPERAVA, HELP</p>
+
 
                 <h2 className="text-xl text-center" id="title-5">
                     Formulários
@@ -167,12 +373,24 @@ export default function page(){
                 </p>
 
                 <li><strong>form</strong>: É uma caixa que reserva um espaço para adicionar elementos específicos de formulário</li>
-                <li><strong>input</strong>: Campo utilizado para que o usuário digite algo manualmente na página.</li>
-                <li><strong>label</strong>: É o rótulo do campo de entrada.</li>
+                <li><strong>input</strong>: Campo utilizado para que o usuário digite algo manualmente na página. Existem vários tipos de input vindo do usuário. neste exemplo vamos usar o "text" e o "checkbox"</li>
+                <li><strong>label</strong>: É o rótulo do campo de entrada. É ideal usar a tag label por facilitar a acessibilidade em vários aspectos</li>
                 <li><strong>button, submit e reset</strong>: São botões para envio e redefinição dos dados preenchidos na caixa de formulário.</li>
                 <br></br>
+                <p className="text-lg">Abaixo, um exemplo de página usando todas as tags que comentamos acima. Note que a declaração de algumas tags muda, com a adição da palavra <strong>for</strong> e também <strong>type</strong>, além de <strong>value</strong> e <strong>name</strong>.</p>
+
+                <div className="flex m-4">
+                    <CodeSnippet content={code3}/>
+                </div>
+                <p>Como resultado do código escrito acima, temos a seguinte página HTML: <Link href="/exemplos/exemplo1" className="font-bold text-teal-400">Clique Aqui</Link></p>
+                <p className="text-5xl">NÃO FUNCIONOU DO JEITO QUE EU ESPERAVA, HELP</p>
+                <br></br>
                 <p>
-                    Com o conteúdo abordado nesta primeira parte, você já consegue criar uma página como esta aqui: <a className="font-bold text-teal-400" href="">COLOCAR UMA PÁGINA DE EXEMPLO</a>
+                    Com o conteúdo abordado nesta primeira parte, você já consegue criar uma página com interconexões, por exemplo, uma página Home, com uma segunda página de Sobre, tendo uma ligação entre as duas páginas com a tag a href.
+                </p>
+                <br></br>
+                <p>
+                    Este é o momento para você se desafiar e começar a montar uma página para exercer todo o conteúdo que você aprendeu neste artigo.
                 </p>
                 <br></br>
                 <p>
