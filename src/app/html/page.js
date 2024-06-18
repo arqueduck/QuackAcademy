@@ -382,7 +382,7 @@ export default function page(){
                 <p>Como resultado do código escrito acima, temos a seguinte página HTML: <a href="/links/exemploForm.html" target="_blank" className="font-bold text-teal-400">Clique Aqui</a></p>
                 <br></br>
                 <p>
-                    Com o conteúdo abordado nesta primeira parte, você já consegue criar uma página com interconexões, por exemplo, uma página Home, com uma segunda página de Sobre, tendo uma ligação entre as duas páginas com a tag a href.
+                    Com o conteúdo abordado nesta primeira parte, você já consegue criar uma página semelhante a esta que você está usando para aprender sobre desenvolvimento web. É possível criar conexões entre páginas usando a tag a href.
                 </p>
                 <br></br>
                 <p>
