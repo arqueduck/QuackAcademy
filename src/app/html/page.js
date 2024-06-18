@@ -2,6 +2,7 @@ import Sidemenu from "@/components/Sidemenu";
 import CodeSnippet from "@/components/code/CodeSnippet";
 import Image from 'next/image'
 import Link from "next/link";
+import Footer from "@/components/Footer";
 
 const code = `
 <!DOCTYPE html>
@@ -342,9 +343,7 @@ export default function page(){
                 <div className="flex m-4">
                     <CodeSnippet content={code1}/>
                 </div>
-                <p>Como resultado do código escrito acima, temos a seguinte página HTML: <Link href="/exemplos/exemplo1" className="font-bold text-teal-400">Clique Aqui</Link></p>
-
-                <p className="text-5xl">NÃO FUNCIONOU DO JEITO QUE EU ESPERAVA, HELP</p>
+                <p>Como resultado do código escrito acima, temos a seguinte página HTML: <a href="/links/exemploHtml.html" target="_blank" className="font-bold text-teal-400">Clique Aqui</a></p>
                 
                 <h2 className="text-xl text-center" id="title-4">
                     Atributos Comuns
@@ -361,9 +360,7 @@ export default function page(){
                 <div className="flex m-4">
                     <CodeSnippet content={code2}/>
                 </div>
-                <p>Como resultado do código escrito acima, temos a seguinte página HTML: <Link href="/exemplos/exemplo1" className="font-bold text-teal-400">Clique Aqui</Link></p>
-                <p className="text-5xl">NÃO FUNCIONOU DO JEITO QUE EU ESPERAVA, HELP</p>
-
+                <p>Como resultado do código escrito acima, temos a seguinte página HTML: <a href="/links/exemploAtrib.html" target="_blank" className="font-bold text-teal-400">Clique Aqui</a></p>
 
                 <h2 className="text-xl text-center" id="title-5">
                     Formulários
@@ -382,11 +379,10 @@ export default function page(){
                 <div className="flex m-4">
                     <CodeSnippet content={code3}/>
                 </div>
-                <p>Como resultado do código escrito acima, temos a seguinte página HTML: <Link href="/exemplos/exemplo1" className="font-bold text-teal-400">Clique Aqui</Link></p>
-                <p className="text-5xl">NÃO FUNCIONOU DO JEITO QUE EU ESPERAVA, HELP</p>
+                <p>Como resultado do código escrito acima, temos a seguinte página HTML: <a href="/links/exemploForm.html" target="_blank" className="font-bold text-teal-400">Clique Aqui</a></p>
                 <br></br>
                 <p>
-                    Com o conteúdo abordado nesta primeira parte, você já consegue criar uma página com interconexões, por exemplo, uma página Home, com uma segunda página de Sobre, tendo uma ligação entre as duas páginas com a tag a href.
+                    Com o conteúdo abordado nesta primeira parte, você já consegue criar uma página semelhante a esta que você está usando para aprender sobre desenvolvimento web. É possível criar conexões entre páginas usando a tag a href.
                 </p>
                 <br></br>
                 <p>
@@ -404,6 +400,8 @@ export default function page(){
                 </p>
                 <br></br>
                 <p>Caso o HTML tenha feito sentido pra você e você quer se desafiar a criar páginas com mais elementos, é só <a className="font-bold text-teal-400" href="https://www.w3schools.com/html/default.asp">CLICAR AQUI</a></p>
+                <br></br>
+                <Footer/>
             </div>
         </div>
     )
