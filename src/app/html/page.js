@@ -65,6 +65,67 @@ const code1 =`
 </html>
 `
 
+const code2=`
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu site</title>
+    <style>
+        .vermelho{
+            color: brown;
+        }
+
+        .verde{
+            color:rgb(18, 133, 18)
+        }
+    </style>
+</head>
+<body>
+    <p>Escreva seu nome: <input id="camponome"></input></p>
+
+    <div class="vermelho">
+        <p>Tudo escrito nessa seção</p>
+        <p>Está na cor Azul</p>
+    </div>
+
+    <div class="verde">
+        <p>Já nesta seção, tudo escrito</p>
+        <p>Está na cor Verde</p>
+    </div>
+</body>
+</html>
+`
+
+const code3=`
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="nome">Digite seu nome: <input type="text" name="nome"></label>
+        <br>
+        <br>
+        <label for="sexo">Qual o seu sexo: </label>
+        <input type="radio" name="sexo">Masculino
+        <input type="radio" name="sexo">Feminino
+        <br>
+        <br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Redefinir">
+        <br>
+        <br>
+        <button>Clique no botão</button>
+    </form>
+</body>
+</html>
+`
+
 export default function page(){
     return (
         <div className="flex overflow-hidden">
@@ -281,9 +342,9 @@ export default function page(){
                 <div className="flex m-4">
                     <CodeSnippet content={code1}/>
                 </div>
-                <p>Como resultado do código escrito acima, temos a seguinte página HTML: <Link href="/links/exemploHtml" className="font-bold text-teal-400">Clique Aqui</Link></p>
+                <p>Como resultado do código escrito acima, temos a seguinte página HTML: <Link href="/exemplos/exemplo1" className="font-bold text-teal-400">Clique Aqui</Link></p>
 
-                <p className="text-5xl">FAZER FUNCIONAR A PARTE DE VER A PÁGINA CRIADA</p>
+                <p className="text-5xl">NÃO FUNCIONOU DO JEITO QUE EU ESPERAVA, HELP</p>
                 
                 <h2 className="text-xl text-center" id="title-4">
                     Atributos Comuns
@@ -292,10 +353,17 @@ export default function page(){
                     Os atributos são usados para várias facilidades, uma delas é a aplicação de estilos em um grupo de tags. Os estilos serão o próximo tema que iremos estudar com a parte de <strong>CSS</strong>
                 </p>
 
-                <li><strong>id</strong>: Identificador único para elementos, faz com que um elemento seja único dentro do código, o ID não pode se repetir dentro de um HTML</li>
-                <li><strong>class</strong>: Classe para estilização e seleção de múltiplos elementos, essa é a parte de CSS que comentamos no começo desta seção.</li>
+                <li><strong>id</strong>: Identificador único para elementos, faz com que um elemento seja único dentro do código, o ID não pode se repetir dentro de um HTML. Esta tag é usada para campos específicos, como um campo onde vamos coletar algum dado do usuário. Assim temos certeza de que o dado será preenchido especificamente no campo com o id X</li>
+                <li><strong>class</strong>: Classe para estilização e seleção de múltiplos elementos, essa é a parte de CSS que comentamos no começo desta seção. Vou dar um gostinho de como usar, mas a explicação mesmo vai estar aninhada na seção de CSS</li>
+                <br></br>
+                <p className="text-lg">Abaixo, um exemplo de página usando todas as tags que comentamos acima. Houve a adição da tag <strong>style</strong> no <strong>head</strong> da nossa página, isto é uma forma de declarar o CSS.</p>
 
-                <h1 className="text-5xl">COLOCAR EXEMPLO DE CÓDIGO PARA CADA ITEM</h1>
+                <div className="flex m-4">
+                    <CodeSnippet content={code2}/>
+                </div>
+                <p>Como resultado do código escrito acima, temos a seguinte página HTML: <Link href="/exemplos/exemplo1" className="font-bold text-teal-400">Clique Aqui</Link></p>
+                <p className="text-5xl">NÃO FUNCIONOU DO JEITO QUE EU ESPERAVA, HELP</p>
+
 
                 <h2 className="text-xl text-center" id="title-5">
                     Formulários
@@ -305,12 +373,24 @@ export default function page(){
                 </p>
 
                 <li><strong>form</strong>: É uma caixa que reserva um espaço para adicionar elementos específicos de formulário</li>
-                <li><strong>input</strong>: Campo utilizado para que o usuário digite algo manualmente na página.</li>
-                <li><strong>label</strong>: É o rótulo do campo de entrada.</li>
+                <li><strong>input</strong>: Campo utilizado para que o usuário digite algo manualmente na página. Existem vários tipos de input vindo do usuário. neste exemplo vamos usar o "text" e o "checkbox"</li>
+                <li><strong>label</strong>: É o rótulo do campo de entrada. É ideal usar a tag label por facilitar a acessibilidade em vários aspectos</li>
                 <li><strong>button, submit e reset</strong>: São botões para envio e redefinição dos dados preenchidos na caixa de formulário.</li>
                 <br></br>
+                <p className="text-lg">Abaixo, um exemplo de página usando todas as tags que comentamos acima. Note que a declaração de algumas tags muda, com a adição da palavra <strong>for</strong> e também <strong>type</strong>, além de <strong>value</strong> e <strong>name</strong>.</p>
+
+                <div className="flex m-4">
+                    <CodeSnippet content={code3}/>
+                </div>
+                <p>Como resultado do código escrito acima, temos a seguinte página HTML: <Link href="/exemplos/exemplo1" className="font-bold text-teal-400">Clique Aqui</Link></p>
+                <p className="text-5xl">NÃO FUNCIONOU DO JEITO QUE EU ESPERAVA, HELP</p>
+                <br></br>
                 <p>
-                    Com o conteúdo abordado nesta primeira parte, você já consegue criar uma página como esta aqui: <a className="font-bold text-teal-400" href="">COLOCAR UMA PÁGINA DE EXEMPLO</a>
+                    Com o conteúdo abordado nesta primeira parte, você já consegue criar uma página com interconexões, por exemplo, uma página Home, com uma segunda página de Sobre, tendo uma ligação entre as duas páginas com a tag a href.
+                </p>
+                <br></br>
+                <p>
+                    Este é o momento para você se desafiar e começar a montar uma página para exercer todo o conteúdo que você aprendeu neste artigo.
                 </p>
                 <br></br>
                 <p>
