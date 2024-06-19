@@ -7,6 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "QuackAcademy",
   description: "Desenvolvendo seu primeiro site de forma descomplicada",
+  viewport: "width=device-width, initial-scale=1.0"
 };
 
 export default function RootLayout({ children }) {
@@ -17,15 +18,15 @@ export default function RootLayout({ children }) {
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous"/>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
       </head>
-      <body className={inter.className}>
-        <div className="
+      <body className={`
+        ${inter.className}
         flex flex-col
         bg-base-100
         h-screen overflow-hidden
-        ">
-          <Header/>
-          {children}
-        </div>
+        `}>
+          <Header>
+            {children}
+          </Header>
       </body>
     </html>
   );

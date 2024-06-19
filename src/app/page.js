@@ -4,18 +4,22 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-      <div className="text-center overflow-y-auto">
+      <div className="flex-1 text-center overflow-y-auto">
         <div className="bg-neutral text-neutral-content p-8 flex flex-col gap-4 ">
-          <div className="flex justify-center gap-4 items-center text-4xl">
-
-            Seja bem-vindo(a) à <LogoLg/>
+          <div className="
+          text-4xl
+          flex flex-col justify-center gap-4 items-center 
+          lg:flex-row
+          ">
+            <p>Seja bem-vindo(a) à </p>
+            <LogoLg/>
           </div>
           <p className="text-center text-lg">
             Inicie sua jornada como desenvolvedor Web
           </p>
           
         </div>
-        <div className="h-56 overflow-hidden">
+        <div className="max-h-56 overflow-hidden">
           <Image
             src="/images/banner.png"
             width={1920}
@@ -23,9 +27,9 @@ export default function Home() {
             alt="Códigos"
           />
         </div>
-        <div className="flex-1 flex">
-          <div className="p-4 max-w-[70%] flex flex-col gap-4">
-            <h1 className="text-3xl">
+        <div className="flex-1 flex flex-col lg:flex-row">
+          <div className="p-4 lg:max-w-[70%] flex flex-col gap-4">
+            <h1 className="text-3xl my-2">
               Por que aprender sobre programação?          
             </h1>
             <p>
@@ -45,7 +49,11 @@ export default function Home() {
             </p>
             
           </div>
-          <div className="p-8 flex-1 flex flex-col justify-center gap-4 font-bold">
+          <div className="
+          p-8
+          font-bold
+          flex-1 flex flex-col justify-center gap-4
+          ">
             <p className="text-xl">Para iniciar sua jornada, é só clicar no botão abaixo:</p>
             <Link href="/introducao" className="btn btn-primary align-bottom mr-2">Vamos começar!</Link>            
           </div>
