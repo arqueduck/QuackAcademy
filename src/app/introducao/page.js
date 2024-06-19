@@ -151,7 +151,7 @@ export default function Introduction(){
                     </p>
 
                     <br></br>
-                    <p>Agora que já temos o que precisamos para começar a escrever uma página, vamos conhecer o esqueleto de uma página web, o HTML.</p>
+                    <p>Agora que já temos o que precisamos para começar a escrever uma página, vamos conhecer o esqueleto de uma página web.</p>
 
                 </section>
                 <Footer><Link href="/html" className="btn btn-primary align-center">Clique aqui e vamos direto para seu próximo passo. O HTML.</Link></Footer>
