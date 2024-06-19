@@ -1,11 +1,14 @@
-## Atividade extensionista - CST Análise de Desenvolvimento de Sistemas
+![Logo QuackAcademy](/public/images/logo.png)
+
+#
+
+### Atividade extensionista - CST Análise de Desenvolvimento de Sistemas
 
 ### Sobre
 
 Projeto desenvolvido pelos alunos [**Felipe Luan Pimentel Arqueman**](https://github.com/arqueduck) e [**Gustavo Marques Aal**](https://github.com/Gustavo-Aal) no **Curso Superior Técnologo de Análise de Desenvolimento de Sistemas** do **Centro Universitário Internacional Uninter**.
 
-**_REVISAR_**  
-O sistema foi hospedado no [vercel.com](https://vercel.com) sob o domínio [`URL DO PROJETO`](/#).
+O sistema foi hospedado no [vercel.com](https://vercel.com) sob o domínio [`www.quackacademy.com.br`](https://www.quackacademy.com.br/).
 
 ### Especificações
 
