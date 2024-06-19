@@ -7,6 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "QuackAcademy",
   description: "Desenvolvendo seu primeiro site de forma descomplicada",
+  viewport: "width=device-width, initial-scale=1.0"
 };
 
 export default function RootLayout({ children }) {
