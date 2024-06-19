@@ -34,30 +34,30 @@ form {
 `
 
 const code5=`
-body {
-    background-color: bisque;
-    font-family: 'Courier New', Courier, monospace;
-}
+    body {
+        background-color: bisque;
+        font-family: 'Courier New', Courier, monospace;
+    }
 
-h1 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
+    h1 {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
 
-h2{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
+    h2{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
 
-p {
-    margin-left: 5%;
-}
+    p {
+        margin-left: 5%;
+    }
 
-img:hover {
-    transform: scale(1.02);
-}
+    img:hover {
+        transform: scale(1.02);
+    }
 
-div.estilo {
-    background-color: aqua;
-}
+    div.estilo {
+        background-color: aqua;
+    }
 `
 
 const codeCss=`
@@ -87,17 +87,17 @@ body {
 `
 
 const codeExtCss=`
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <title>Exemplo de CSS</title>
-        <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1>Bem-vindo ao CSS</h1>
-</body>
-</html>
+    <!DOCTYPE html>
+    <html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Exemplo de CSS</title>
+            <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Bem-vindo ao CSS</h1>
+    </body>
+    </html>
 `
 
 
