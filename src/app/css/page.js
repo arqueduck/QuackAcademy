@@ -1,5 +1,6 @@
 import CodeSnippet from "@/components/code/CodeSnippet"
 import Sidemenu from "@/components/Sidemenu"
+import Footer from "@/components/Footer"
 
 const code=`
 seletor {
@@ -255,6 +256,7 @@ export default function page(){
                 <p>Como exemplo de página, toda construída somente com HTML e CSS, deixo aqui este <a href="https://arqueduck.github.io/felipesitefaculdade/" target="_blank" className="font-bold text-teal-400">exemplo</a> e também este <a href="https://gustavo-aal.github.io/gustavo-marques-aal/" target="_blank" className="font-bold text-teal-400">exemplo</a>, assim você pode deixar a sua criatividade voar e se desafiar a criar algo semelhante a estas páginas.</p>
                 <br></br>
                 <p>Lembrando que aprofundar o seu conhecimento neste tema é de extrema importância, por isso, depois de conhecer estes conceitos fundamentais e conseguir montar o seu primeiro documento HTML estilizado com CSS, dê uma olhadinha no <a href="https://www.w3schools.com/css/default.asp" target="_blank" className="font-bold text-teal-400">W3Schools</a>, tenho certeza que o céu é o limite pra você!</p>
+                <Footer/>
             </div>
         </div>
     )
