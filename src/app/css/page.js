@@ -161,7 +161,7 @@ export default function page(){
                 <p>A tag <code>&lt;style&gt;</code> é usada para incluir estilos diretamente dentro do HTML. Este código é lido antes da página carregar, assim os estilos são aplicados antes do conteúdo aparecer na tela</p>
 
                 <div className="flex m-4">
-                    <CodeSnippet content={codeCss}></CodeSnippet>
+                    <CodeSnippet content={codeCss}/>
                 </div>
                 <p>No exemplo acima, o CSS está alterando a cor de fundo de toda a página para a cor "bisque". Lembrando que é importante colocar a tag <code>&lt;style&gt;</code> dentro da tag <code>&lt;head&gt;</code> do HTML</p>
 
@@ -173,14 +173,14 @@ export default function page(){
                 <p>Primeiro, crie um arquivo chamado style.css na mesma pasta que o seu arquivo HTML. Dentro desse arquivo, escreva o código CSS que você deseja executar:</p>
 
                 <div className="flex m-4">
-                    <CodeSnippet content={codeFileCss}></CodeSnippet>
+                    <CodeSnippet content={codeFileCss} language="css"/>
                 </div>
 
                 <h3 className="text-lg font-semibold mt-4 mb-2">Passo 2: Vincule o Arquivo CSS no HTML</h3>
                 <p>Então, adicione o seu arquivo CSS no documento HTML, usando a tag <code>&lt;link&gt;</code>, com os atributos rel, que indica qual é a relação do arquivo que está sendo linkado ao documento HTML, e também href, que indica qual o caminho do arquivo que você quer que seja lido como o CSS da página.</p>
 
                 <div className="flex m-4">
-                    <CodeSnippet content={codeExtCss}></CodeSnippet>
+                    <CodeSnippet content={codeExtCss}/>
                 </div>
                 <p>No exemplo acima, o arquivo style.css vai aplicar as alterações no documento HTML, neste exemplo, vai alterar  a cor do fundo da página para "bisque" e alterar também a fonte utilizada em todo o documento.</p>
                 <br></br>
@@ -199,21 +199,21 @@ export default function page(){
                     Sintaxe é como chamamos a "forma padrão" de escrita para declarar corretamente um elemento em alguma linguagem de programação. No caso do CSS a sintaxe básica sempre vai seguir o esquema abaixo:
                 </p>
                 <div className="flex m-4">
-                    <CodeSnippet content={code}></CodeSnippet>
+                    <CodeSnippet content={code} language="css"/>
                 </div>
                 <p>Já conhecemos os seletores, então vamos usar alguns deles de exemplo apenas para fixar esta parte do conhecimento</p>
-                <div className="flex">
+                <div className="flex flex-wrap">
                     <div className="flex-1 m-4">
-                        <CodeSnippet content={code1}></CodeSnippet>
+                        <CodeSnippet content={code1} language="css"/>
                     </div>
                     <div className="flex-1 m-4">
-                        <CodeSnippet content={code2}></CodeSnippet>
+                        <CodeSnippet content={code2} language="css"/>
                     </div>
                     <div className="flex-1 m-4">
-                        <CodeSnippet content={code3}></CodeSnippet>
+                        <CodeSnippet content={code3} language="css"/>
                     </div>
                     <div className="flex-1 m-4">
-                        <CodeSnippet content={code4}></CodeSnippet>
+                        <CodeSnippet content={code4} language="css"/>
                     </div>
                 </div>
                 <p>Nos códigos acima selecionamos, respectivamente:</p>
@@ -232,11 +232,11 @@ export default function page(){
                 <p>
                     Nesta porção, vamos ver alguns exemplos que podemos usar para deixar o nosso site mais bonito para você compreender como podemos estruturar o conteúdo de nossa página de estilos.
                 </p>
-                <div className="flex">
+                <div className="flex flex-wrap">
                     <div className="flex-1 m-4">
-                            <CodeSnippet content={code5}></CodeSnippet>
+                            <CodeSnippet content={code5} language="css"/>
                     </div>
-                    <div className="flex-1 m-4">
+                    <div className="flex-1 min-w-96 m-4">
                         <p>No exemplo ao lado, usamos os seguintes seletores:</p>
                         <br></br>
                         <li><strong>body:</strong> No body, pedimos para que o plano de fundo seja todo na cor bisque, pedimos também para que a fonte seja uma específica. Assim todos os elementos do body vão seguir esta regra</li>
