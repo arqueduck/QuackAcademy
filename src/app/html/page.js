@@ -1,130 +1,130 @@
 import Sidemenu from "@/components/Sidemenu";
 import CodeSnippet from "@/components/code/CodeSnippet";
 import Image from 'next/image'
-import Link from "next/link";
 import Footer from "@/components/Footer";
 
 const code = `
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minha página</title>
-</head>
-<body>
-    
-</body>
-</html>`
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Minha página</title>
+    </head>
+    <body>
+        
+    </body>
+    </html>
+`
 
 const code1 =`
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MEu primeiro site</title>
-</head>
-<body>
-    <!-- O que é escrito dentro dos sinais de comentário, não aparecem na página HTML -->
-    <!-- Geralmente esta tag é usada para comentar e organizar melhor o código -->
-    <!-- Assim fica mais fácil para outras pessoas entenderem o que foi programado -->
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Meu primeiro site</title>
+    </head>
+    <body>
+        <!-- O que é escrito dentro dos sinais de comentário, não aparecem na página HTML -->
+        <!-- Geralmente esta tag é usada para comentar e organizar melhor o código -->
+        <!-- Assim fica mais fácil para outras pessoas entenderem o que foi programado -->
 
-    <h1>Este é um título grandão</h1>
-    <h2>Este é um título menor</h2>
-    <h3>E o título diminui</h3>
-    <h6>Até H6</h6>
+        <h1>Este é um título grandão</h1>
+        <h2>Este é um título menor</h2>
+        <h3>E o título diminui</h3>
+        <h6>Até H6</h6>
 
-    <p>Este é um parágrafo, usado para ter qualquer coisa escrita.</p>
-    <p>Vou adicionar várias linhas de caracteres para ver como fica</p>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis perspiciatis aut magnam delectus, quae voluptate, ut at nisi nostrum consequuntur aspernatur, natus porro commodi cum vitae dolore ullam necessitatibus iure voluptas quod eos dolores sint esse. Architecto consequuntur, eius labore, iusto, autem alias consequatur deserunt maxime totam dignissimos amet? Quibusdam sapiente impedit voluptatibus iusto rerum blanditiis maxime assumenda, ab quo repudiandae. Incidunt corporis, deserunt officiis adipisci sapiente libero in eius similique eaque distinctio? Ad cupiditate ex consequuntur sapiente quo delectus itaque neque magnam rerum at! Itaque ullam architecto unde aliquid modi, eius sint, voluptatibus optio accusamus doloremque maiores porro rem?</p>
+        <p>Este é um parágrafo, usado para ter qualquer coisa escrita.</p>
+        <p>Vou adicionar várias linhas de caracteres para ver como fica</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis perspiciatis aut magnam delectus, quae voluptate, ut at nisi nostrum consequuntur aspernatur, natus porro commodi cum vitae dolore ullam necessitatibus iure voluptas quod eos dolores sint esse. Architecto consequuntur, eius labore, iusto, autem alias consequatur deserunt maxime totam dignissimos amet? Quibusdam sapiente impedit voluptatibus iusto rerum blanditiis maxime assumenda, ab quo repudiandae. Incidunt corporis, deserunt officiis adipisci sapiente libero in eius similique eaque distinctio? Ad cupiditate ex consequuntur sapiente quo delectus itaque neque magnam rerum at! Itaque ullam architecto unde aliquid modi, eius sint, voluptatibus optio accusamus doloremque maiores porro rem?</p>
 
-    <a href="https://google.com">Clique aqui e abra o Google</a>
-   
-    <br>
-    <p>Acima e abaixo deste parágrafo tem uma quebra de linha</p>
-    <br>
+        <a href="https://google.com">Clique aqui e abra o Google</a>
+    
+        <br>
+        <p>Acima e abaixo deste parágrafo tem uma quebra de linha</p>
+        <br>
 
-    <div>
-        <p>Este texto está dentro de uma DIV</p>
-    </div>
+        <div>
+            <p>Este texto está dentro de uma DIV</p>
+        </div>
 
-    <img src="https://apexensino.com.br/wp-content/uploads/2019/02/iStock-1017296544-1024x683-1024x640.jpg" alt="Homem programando">
+        <img src="https://apexensino.com.br/wp-content/uploads/2019/02/iStock-1017296544-1024x683-1024x640.jpg" alt="Homem programando">
 
-    <ol>
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
-    </ol>
+        <ol>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ol>
 
-    <ul>
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
-    </ul>
-</body>
-</html>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+    </body>
+    </html>
 `
 
 const code2=`
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu site</title>
-    <style>
-        .vermelho{
-            color: brown;
-        }
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Meu site</title>
+        <style>
+            .vermelho{
+                color: brown;
+            }
 
-        .verde{
-            color:rgb(18, 133, 18)
-        }
-    </style>
-</head>
-<body>
-    <p>Escreva seu nome: <input id="camponome"></input></p>
+            .verde{
+                color:rgb(18, 133, 18)
+            }
+        </style>
+    </head>
+    <body>
+        <p>Escreva seu nome: <input id="camponome"></input></p>
 
-    <div class="vermelho">
-        <p>Tudo escrito nessa seção</p>
-        <p>Está na cor Azul</p>
-    </div>
+        <div class="vermelho">
+            <p>Tudo escrito nessa seção</p>
+            <p>Está na cor Azul</p>
+        </div>
 
-    <div class="verde">
-        <p>Já nesta seção, tudo escrito</p>
-        <p>Está na cor Verde</p>
-    </div>
-</body>
-</html>
+        <div class="verde">
+            <p>Já nesta seção, tudo escrito</p>
+            <p>Está na cor Verde</p>
+        </div>
+    </body>
+    </html>
 `
 
 const code3=`
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <form>
-        <label for="nome">Digite seu nome: <input type="text" name="nome"></label>
-        <br>
-        <br>
-        <label for="sexo">Qual o seu sexo: </label>
-        <input type="radio" name="sexo">Masculino
-        <input type="radio" name="sexo">Feminino
-        <br>
-        <br>
-        <input type="submit" value="Enviar">
-        <input type="reset" value="Redefinir">
-        <br>
-        <br>
-        <button>Clique no botão</button>
-    </form>
-</body>
-</html>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <form>
+            <label for="nome">Digite seu nome: <input type="text" name="nome"></label>
+            <br>
+            <br>
+            <label for="sexo">Qual o seu sexo: </label>
+            <input type="radio" name="sexo">Masculino
+            <input type="radio" name="sexo">Feminino
+            <br>
+            <br>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Redefinir">
+            <br>
+            <br>
+            <button>Clique no botão</button>
+        </form>
+    </body>
+    </html>
 `
 
 export default function page(){
@@ -167,38 +167,7 @@ export default function page(){
             </Sidemenu>
 
             <div className="p-4 overflow-y-auto">
-                <h2 className="text-2xl text-center">
-                    Ferramentas para um desenvolvimento saudável
-                </h2>
-                <p>
-                    O HTML é a estrutura e conteúdo de uma página web. Mas antes de falarmos sobre os principais pontos desse tema, vamos primeiro comentar sobre as ferramentas usadas para que o desenvolvimento de uma página web seja facilitada em vários aspectos. Para isso, vamos usar um <strong>IDE</strong>.
-                </p>
-
-                <h2 className="text-2xl text-center">
-                    O que é IDE?
-                </h2>
-
-                <p>
-                    IDE significa Integrated Development Environment, ou Ambiente de Desenvolvimento Integrado. Trata-se de um software que fornece um conjunto de ferramentas abrangentes para facilitar o desenvolvimento de software. Um IDE geralmente inclui um editor de código, ferramentas de depuração, um compilador ou interpretador, e outras funcionalidades integradas que ajudam a escrever, testar e depurar código de maneira mais eficiente. A parte importante aqui é que uma IDE facilita e muito a vida de qualquer desenvolvedor usando qualquer linguagem de programação
-                </p>
-                <p>
-                    Apenas para dar um exemplo rápido sobre as facilidades da IDE, o código abaixo é a estrutura base para qualquer página web e deve ser escrito sempre na criação de uma página
-                </p>
-                <div className="flex m-4">
-                    <CodeSnippet content={code} />
-                </div>
-                <p>
-                    Não se atenha ao que está escrito, o importante é que isso é algo fundamental em um documento HTML.
-                </p>
-                <p>
-                    A IDE nos fornece uma grande facilidade nessa parte que é escrever toda essa estrutura automaticamente apertando algumas poucas teclas. Vamos aprender a fazer isso juntos no decorrer deste passo-a-passo
-                </p>
-                <p>
-                    Para o desenvolvimento de sua primeira página web, a dica é usar o Visual Studio Code, que é um dos IDEs mais populares na comunidade de desenvolvimento em geral, com suporte extensivo para HTML, CSS, JavaScript e muitras outras lingagens.
-                </p>
-                <li>
-                    Para instalar o Visual Studio Code, é só assistir a este vídeo: <a className="font-bold text-teal-400" href="https://www.youtube.com/watch?v=49K-Zxc8A7A">"Como baixar e instalar o VSCODE"</a>
-                </li>
+                
 
                 <h2 className="text-2xl text-center">
                     HTML (HyperText Markup Language)
