@@ -1,7 +1,7 @@
-export default function Footer(){
+export default function Footer({children}){
     return (
-        <footer>
-            <div className="h-20 flex justify-around bg-base-300"></div>
-        </footer>
+            <div className="h-20 flex justify-center items-center bg-base-300">
+                {children}
+            </div>
     )
 }
