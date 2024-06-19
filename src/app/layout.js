@@ -24,8 +24,9 @@ export default function RootLayout({ children }) {
         bg-base-100
         h-screen overflow-hidden
         `}>
-          <Header/>
-          {children}
+          <Header>
+            {children}
+          </Header>
       </body>
     </html>
   );
