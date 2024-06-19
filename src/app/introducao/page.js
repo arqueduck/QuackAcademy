@@ -1,3 +1,18 @@
+import CodeSnippet from "@/components/code/CodeSnippet";
+
+const code = `
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha página</title>
+</head>
+<body>
+    
+</body>
+</html>`
+
 export default function Introduction(){
     return (
         <div className="p-4 flex flex-col overflow-y-auto">
@@ -55,6 +70,44 @@ export default function Introduction(){
                 <p className="text-justify pb-2">
                     Estudar desenvolvimento web pode parecer um desafio, mas com dedicação e prática, você será capaz de criar sites incríveis e funcionais. HTML, CSS e JavaScript são os primeiros passos nesse caminho e, com o tempo, você poderá expandir seu conhecimento para outras áreas mais avançadas. Estamos aqui para ajudá-lo em cada etapa desse processo de aprendizado. Vamos começar essa jornada juntos!
                 </p>
+                <br></br>
+                <p className="text-xl">Antes de partirmos para os estudos, preciso comentar sobre as ferramentas que você deve utilizar para ser um desenvolvedor de sucesso!</p>
+
+                <h2 className="text-2xl text-center">
+                    Ferramentas para um desenvolvimento saudável
+                </h2>
+                <p>
+                    Desenvolver aplicações ou escrever páginas web pode ser um desafio por conta da repetição de código que precisamos fazer, por isso usamos algumas ferramentas para que o desenvolvimento de uma página web seja facilitada em vários aspectos. Para isso, vamos usar um <strong>IDE</strong>.
+                </p>
+
+                <h2 className="text-2xl text-center">
+                    O que é IDE?
+                </h2>
+
+                <p>
+                    IDE significa Integrated Development Environment, ou Ambiente de Desenvolvimento Integrado. Trata-se de um software que fornece um conjunto de ferramentas abrangentes para facilitar o desenvolvimento de software. Um IDE geralmente inclui um editor de código, ferramentas de depuração, um compilador ou interpretador, e outras funcionalidades integradas que ajudam a escrever, testar e depurar código de maneira mais eficiente. A parte importante aqui é que uma IDE facilita e muito a vida de qualquer desenvolvedor usando qualquer linguagem de programação
+                </p>
+                <p>
+                    Apenas para dar um exemplo rápido sobre as facilidades da IDE, o código abaixo é a estrutura base para qualquer página web e deve ser escrito sempre na criação de uma página
+                </p>
+                <div className="flex m-4">
+                    <CodeSnippet content={code} />
+                </div>
+                <p>
+                    Não se atenha ao que está escrito, o importante é que isso é algo fundamental em um documento HTML.
+                </p>
+                <p>
+                    A IDE nos fornece uma grande facilidade nessa parte que é escrever toda essa estrutura automaticamente apertando algumas poucas teclas. Vamos aprender a fazer isso juntos no decorrer deste passo-a-passo
+                </p>
+                <p>
+                    Para o desenvolvimento de sua primeira página web, a dica é usar o Visual Studio Code, que é um dos IDEs mais populares na comunidade de desenvolvimento em geral, com suporte extensivo para HTML, CSS, JavaScript e muitras outras lingagens.
+                </p>
+                <li>
+                    Para instalar o Visual Studio Code, é só assistir a este vídeo: <a className="font-bold text-teal-400" href="https://www.youtube.com/watch?v=49K-Zxc8A7A">"Como baixar e instalar o VSCODE"</a>
+                </li>
+                <br></br>
+                <p>Agora que já temos o que precisamos para começar a escrever uma página, vamos conhecer o esqueleto de uma página web, o HTML.</p>
+
             </section>
         </div>
     )
