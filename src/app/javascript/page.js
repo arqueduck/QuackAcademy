@@ -155,7 +155,7 @@ export default function page(){
                         Nesse artigo, vou te mostrar os principais tópicos sobre a linguagem de programação que você precisa conhecer para criar seus próprios códigos.
                     </p>
                     <p>
-                        Ah! Não esquece que é muito importante aprofundar ainda mais seu conhecimento neste tema. Você pode buscar também outras referências, como por exemplo o <a className="font-bold text-teal-400" href="https://www.w3schools.com/js/default.asp">W3Schools</a>, que além de ter um tutorial passo-a-passo de como iniciar com o JavaScript, possui um acervo completo de artigos detalhados sobre cada tópico.
+                        Ah! Não esquece que é muito importante aprofundar ainda mais seu conhecimento neste tema. Você pode buscar também outras referências, como por exemplo o <a className="font-bold text-teal-400" target="_blank" href="https://www.w3schools.com/js/default.asp">W3Schools</a>, que além de ter um tutorial passo-a-passo de como iniciar com o JavaScript, possui um acervo completo de artigos detalhados sobre cada tópico.
                     </p>
                     <br/>
                     <p>
@@ -323,7 +323,7 @@ export default function page(){
                         Esses são os principais temas iniciais que precisamos aprender para começar a implementar funcionalidade nas nossas páginas web.
                     </p>
                     <p className="mb-4">
-                        Reforçamos a importância de se aprofundar ainda mais em cada um dos temas. Você pode encontrar muito material bom, como o <a className="font-bold text-teal-400" href="https://www.w3schools.com/js/default.asp">W3Schools</a> que mencionamos acima, e também em vídeos no YouTube.
+                        Reforçamos a importância de se aprofundar ainda mais em cada um dos temas. Você pode encontrar muito material bom, como o <a className="font-bold text-teal-400" target="_blank" href="https://www.w3schools.com/js/default.asp">W3Schools</a> que mencionamos acima, e também em vídeos no YouTube.
                     </p>
                     <p className="mb-4">
                         Mas fica a dica: ao acessar esses conteúdos na internet fique atento a data de publicação para não estudar um conteúdo desatualizado.
