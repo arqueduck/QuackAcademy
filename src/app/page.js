@@ -6,10 +6,10 @@ export default function Home() {
   return (
       <div className="text-center overflow-y-auto">
         <div className="bg-neutral text-neutral-content p-8 flex flex-col gap-4 ">
-          <p className="flex justify-center gap-4 items-center text-4xl">
+          <div className="flex justify-center gap-4 items-center text-4xl">
 
             Seja bem-vindo(a) à <LogoLg/>
-          </p>
+          </div>
           <p className="text-center text-lg">
             Inicie sua jornada como desenvolvedor Web
           </p>
