@@ -5,8 +5,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Atividade Extensionista",
-  description: "Atividade extensionista desenvolvido por Felipe e Gustavo.",
+  title: "QuackAcademy",
+  description: "Desenvolvendo seu primeiro site de forma descomplicada",
 };
 
 export default function RootLayout({ children }) {

@@ -47,7 +47,7 @@ export default function Home() {
           </div>
           <div className="p-8 flex-1 flex flex-col justify-center gap-4 font-bold">
             <p className="text-xl">Para iniciar sua jornada, é só clicar no botão abaixo:</p>
-            <Link href="/introducao" className="btn btn-primary align-bottom mr-2">vamos começar</Link>            
+            <Link href="/introducao" className="btn btn-primary align-bottom mr-2">Vamos começar!</Link>            
           </div>
         </div>
       </div>
