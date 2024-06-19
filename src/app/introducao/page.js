@@ -91,23 +91,41 @@ export default function Introduction(){
                         Quando você acessa um site, seu navegador (como o Chrome, Firefox ou Safari) solicita informações a um servidor. O servidor, então, envia de volta os arquivos necessários para exibir o site no seu navegador. Esses arquivos incluem HTML, CSS e JavaScript, que são as três principais tecnologias do desenvolvimento web front-end.
                     </p>
                     <ul className="list-disc pl-6">
-                        <li><strong>HTML (HyperText Markup Language)</strong>: É a linguagem padrão usada para criar a estrutura de uma página web. Pense no HTML como o esqueleto de uma página, definindo títulos, parágrafos, links e outros elementos.</li>
-                        <li><strong>CSS (Cascading Style Sheets)</strong>: É usado para estilizar o HTML, adicionando cores, fontes, espaçamentos, layouts e mais. O CSS transforma o esqueleto em algo visualmente atraente e organizado.</li>
-                        <li><strong>JavaScript</strong>: É uma linguagem de programação que adiciona interatividade às páginas web. Com JavaScript, você pode criar elementos dinâmicos, como sliders de imagens, formulários interativos e jogos online.</li>
+                        <li>
+                            <strong>HTML (HyperText Markup Language)</strong>: É a linguagem padrão usada para criar a estrutura de uma página web. Pense no HTML como o esqueleto de uma página, definindo títulos, parágrafos, links e outros elementos.
+                        </li>
+                        <li>
+                            <strong>CSS (Cascading Style Sheets)</strong>: É usado para estilizar o HTML, adicionando cores, fontes, espaçamentos, layouts e mais. O CSS transforma o esqueleto em algo visualmente atraente e organizado.
+                        </li>
+                        <li>
+                            <strong>JavaScript</strong>: É uma linguagem de programação que adiciona interatividade às páginas web. Com JavaScript, você pode criar elementos dinâmicos, como sliders de imagens, formulários interativos e jogos online.
+                        </li>
                     </ul>
                     
                     <h2 className="text-2xl m-4 text-center" id="title-3">
                         Por que estudar HTML, CSS e JavaScript primeiro?
                     </h2>
                     <ul className="list-disc pl-6">
-                        <li><strong>Fundação Essencial</strong>: HTML, CSS e JavaScript são as pedras angulares do desenvolvimento web. Dominar esses três permite que você compreenda como os sites são estruturados, estilizados e como funcionam de forma interativa.</li>
-                        <li><strong>Curva de Aprendizado Suave</strong>: Comparado a outras linguagens de programação, HTML e CSS são relativamente fáceis de aprender. Eles fornecem uma base sólida antes de mergulhar em JavaScript, que é mais complexo.</li>
-                        <li><strong>Imediatismo dos Resultados</strong>: Com HTML e CSS, você pode ver os resultados do seu trabalho instantaneamente no navegador. Isso torna o aprendizado mais recompensador e motivador.</li>
-                        <li><strong>Ampliação de Habilidades</strong>: Conhecer bem HTML, CSS e JavaScript abre portas para aprender frameworks e bibliotecas populares, como React, Angular, e Vue.js, além de tecnologias back-end, como Node.js.</li>
-                        <li><strong>Relevância no Mercado</strong>: Ter um bom domínio dessas tecnologias é altamente valorizado no mercado de trabalho. Muitos empregos em tecnologia exigem conhecimentos sólidos em HTML, CSS e JavaScript.</li>
+                        <li>
+                            <strong>Fundação Essencial</strong>: HTML, CSS e JavaScript são as pedras angulares do desenvolvimento web. Dominar esses três permite que você compreenda como os sites são estruturados, estilizados e como funcionam de forma interativa.
+                        </li>
+                        <li>
+                            <strong>Curva de Aprendizado Suave</strong>: Comparado a outras linguagens de programação, HTML e CSS são relativamente fáceis de aprender. Eles fornecem uma base sólida antes de mergulhar em JavaScript, que é mais complexo.
+                        </li>
+                        <li>
+                            <strong>Imediatismo dos Resultados</strong>: Com HTML e CSS, você pode ver os resultados do seu trabalho instantaneamente no navegador. Isso torna o aprendizado mais recompensador e motivador.
+                        </li>
+                        <li>
+                            <strong>Ampliação de Habilidades</strong>: Conhecer bem HTML, CSS e JavaScript abre portas para aprender frameworks e bibliotecas populares, como React, Angular, e Vue.js, além de tecnologias back-end, como Node.js.
+                        </li>
+                        <li>
+                            <strong>Relevância no Mercado</strong>: Ter um bom domínio dessas tecnologias é altamente valorizado no mercado de trabalho. Muitos empregos em tecnologia exigem conhecimentos sólidos em HTML, CSS e JavaScript.
+                        </li>
                     </ul>
                     <br></br>
-                    <p className="text-xl text-center">Antes de partirmos para os estudos propriamente ditos, preciso comentar sobre as ferramentas que você deve utilizar para se tornar um desenvolvedor de sucesso!</p>
+                    <p className="text-xl text-center">
+                        Antes de partirmos para os estudos propriamente ditos, preciso comentar sobre as ferramentas que você deve utilizar para se tornar um desenvolvedor de sucesso!
+                    </p>
 
                     <h2 className="text-2xl text-center" id="title-4">
                         Ferramentas para um desenvolvimento saudável
@@ -151,11 +169,17 @@ export default function Introduction(){
                     </p>
 
                     <br></br>
-                    <p>Agora que já temos o que precisamos para começar a escrever uma página, vamos conhecer o esqueleto de uma página web.</p>
+                    <p>
+                        Agora que já temos o que precisamos para começar a escrever uma página, vamos conhecer o esqueleto de uma página web.
+                    </p>
 
                 </section>
-                <Footer><Link href="/html" className="btn btn-primary align-center">Clique aqui e vamos direto para seu próximo passo. O HTML.</Link></Footer>
-                
+                <br></br>
+                <Footer>
+                    <Link href="/html" className="btn shrink=[1] btn-primary align-center">
+                        Clique aqui e vamos direto para seu próximo passo. O HTML.
+                    </Link>
+                </Footer>
             </div>
         </div>
     )
