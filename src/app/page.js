@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import LogoLg from "@/components/LogoLg";
 import Image from "next/image";
 import Link from "next/link";
@@ -55,7 +56,8 @@ export default function Home() {
           flex-1 flex flex-col justify-center gap-4
           ">
             <p className="text-xl">Para iniciar sua jornada, é só clicar no botão abaixo:</p>
-            <Link href="/introducao" className="btn btn-primary align-bottom mr-2">Vamos começar!</Link>            
+            <Link href="/introducao" className="btn btn-primary align-bottom mr-2">Vamos começar!</Link>
+            <Footer/>            
           </div>
         </div>
       </div>
