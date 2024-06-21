@@ -225,7 +225,7 @@ export default function page(){
                 />
 
                 <p>
-                    Feito isso, algo muito semelhante ao que está abaixo será aberto no seu computador. Basta clicar na primeira opção de "Open Folder", que significa "Abrir pasta". Ah! <strong>Mais uma informação importante.</strong> Em lingagem de programação é usado muito inglês, caso você não tenha conhecimento não tem problema nenhum. Mesmo assim você consegue criar a sua primeira página, mas fica um incentivo para você aprender também o inglês para seguir no mundo de programação.
+                    Feito isso, algo muito semelhante ao que está abaixo será aberto no seu computador. Basta clicar na primeira opção de "Open Folder", que significa "Abrir pasta". Ah! <strong>Mais uma informação importante.</strong> Em linguagem de programação é usado muito inglês, caso você não tenha conhecimento não tem problema nenhum. Mesmo assim você consegue criar a sua primeira página, mas fica um incentivo para você aprender também o inglês para seguir no mundo de programação.
                 </p>
                 <Image
                     src="/images/openFolder.png"
