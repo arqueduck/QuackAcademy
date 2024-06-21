@@ -275,13 +275,17 @@ export default function page(){
                 <p>
                     Nesta porção, vamos ver alguns exemplos que podemos usar para deixar o nosso site mais bonito para você compreender como podemos estruturar o conteúdo de nossa página de estilos.
                 </p>
-                <div className="flex flex-wrap">
-                    <div className="flex-1 m-4">
-                            <CodeSnippet content={code5} language="css"/>
+                <div className="flex flex-wrap overflow-hidden">
+                    <div className="flex-1 m-2 ml-0 max-w-full">
+                            <CodeSnippet
+                                content={code5}
+                                language="css"
+                                className="overflow-auto"
+                            />
                     </div>
-                    <div className="flex-1 min-w-96 m-4">
+                    <div className="flex-1 lg:min-w-96 m-4">
                         <p>
-                            No exemplo ao lado, usamos os seguintes seletores:
+                            Nesse exemplo, usamos os seguintes seletores:
                             </p>
                         <br></br>
                         <li>
@@ -330,12 +334,12 @@ export default function page(){
                 <p className="text-xl text-center">
                     Por último, mas não menos importante, vamos conhecer o que pode fazer mágica no seu documento HTML.
                 </p>
-                <br></br>
-                <Footer>
-                    <Link href="/javascript" className="btn shrink=[1] btn-primary align-center">
+                <div className="flex justify-center my-4">
+                    <Link href="/javascript" className="btn shrink-[1] btn-primary align-center">
                         Clique aqui e vamos decolar, com o JavaScript.
                     </Link>
-                </Footer>
+                </div>
+                <Footer/>
             </div>
         </div>
     )

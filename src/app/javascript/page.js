@@ -144,6 +144,9 @@ export default function page(){
             <div className="p-4 overflow-y-auto">
                 <section className="mb-6">
                     <h2 className="text-2xl text-center">
+                        JavaScript
+                    </h2>
+                    <h2 className="text-2xl text-center">
                         Mas afinal, o que é JavaScript?
                     </h2>
                     <p className="mb-4">
@@ -336,11 +339,14 @@ export default function page(){
                     </p>
 
                 </section>
-                <Footer>
+
+                <div className="flex justify-center my-4">
                     <Link href="/" className="btn shrink=[1] btn-primary align-center">
                         Parabéns! Você terminou esse pequeno curso.
                     </Link>
-                </Footer>
+                </div>
+
+                <Footer/>
             </div>
         </div>
     )

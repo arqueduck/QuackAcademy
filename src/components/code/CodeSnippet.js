@@ -6,11 +6,11 @@ const highlight = (code, language) => {
     return Prism.highlight(code, Prism.languages[language], language )
 }
 
-export default function CodeSnippet({content, language = "markup"}){
+export default function CodeSnippet({content, language = "markup", className}){
     const highlightedCode = highlight(content, language)
 
     return (
-        <div className="mockup-code p-4 my-2">
+        <div className={`mockup-code p-4 my-2 ${className}`}>
             <pre>
                 <code 
                 dangerouslySetInnerHTML={{

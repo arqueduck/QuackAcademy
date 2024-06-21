@@ -57,7 +57,7 @@ export default function Header({children}){
             <label htmlFor="my-drawer-3" aria-label="close sidebar" className="drawer-overlay"></label> 
 
             <ul className="
-            menu p-4 w-80 min-h-full bg-neutral
+            menu p-2 min-h-full bg-neutral
             flex flex-col gap-4
             text-lg
             ">
@@ -68,19 +68,19 @@ export default function Header({children}){
                     {/* <House className="fill-"/> */}
                 </Link>
                 <Link href="/introducao"
-                className="text-neutral-content font-bold">
+                className="text-neutral-content font-bold text-center">
                     Comece aqui!
                 </Link>
                 <Link href="/html"
-                className="text-neutral-content">
+                className="text-neutral-content text-center">
                     HTML
                 </Link>
                 <Link href="/css"
-                className="text-neutral-content">
+                className="text-neutral-content text-center">
                     CSS
                 </Link>
                 <Link href="/javascript"
-                className="text-neutral-content">
+                className="text-neutral-content text-center">
                 JavaScript
                 </Link>
             </ul>

@@ -443,12 +443,12 @@ export default function page(){
                 <p className="text-xl text-center">
                     Vamos agora conhecer um novo conceito para você deixar o seu site bonito e organizado.
                 </p>
-                <br></br>
-                <Footer>
-                    <Link href="/css" className="btn shrink=[1] btn-primary align-center">
+                <div className="flex justify-center my-4">
+                    <Link href="/css" className="btn shrink-[1] btn-primary align-center">
                         Clique aqui e vamos deixar sua página estilosa, com o CSS.
                     </Link>
-                </Footer>
+                </div>
+                <Footer/>
             </div>
         </div>
     )

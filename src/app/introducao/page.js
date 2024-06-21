@@ -174,12 +174,12 @@ export default function Introduction(){
                     </p>
 
                 </section>
-                <br></br>
-                <Footer>
-                    <Link href="/html" className="btn shrink=[1] btn-primary align-center">
+                <div className="flex justify-center">
+                    <Link href="/html" className="btn shrink-[1] btn-primary align-center mb-4">
                         Clique aqui e vamos direto para seu próximo passo. O HTML.
                     </Link>
-                </Footer>
+                </div>
+                <Footer/>
             </div>
         </div>
     )
