@@ -309,7 +309,7 @@ export default function page(){
                     </div>
                 </div>
                 <p>
-                    Como resultado do código acima, conseguimos transformar uma página como <a href="/links/exemploHtml.html" target="_blank" className="font-bold text-teal-400">esta</a>, em uma página como <a href="/links/exemploCss.html" target="_blank" className="font-bold text-teal-400">esta</a>.
+                    Como resultado do código acima, conseguimos transformar uma página como <a href="/links/exemploHtml.html" target="_blank" className="font-bold text-teal-400">esta</a>, em uma página como <a href="/links/exemploCSS.html" target="_blank" className="font-bold text-teal-400">esta</a>.
                 </p>
                 <p>
                     Um página mais estilizada, exige mais seletores, ainda mais propriedades e também valores. Por isso é importante treinar bastante essa parte de CSS para deixar a sua criatividade falar por você.
